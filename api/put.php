@@ -15,7 +15,7 @@ $text = $_POST['text'];
 $password = $_POST['password'];
 $sqlresult['debug'] = $text;
 
-$key = pack('H*', "ED1025684BF30B12E92D5122D8A03CB32D2A2DFE55F3044C9D8DBC4FD51A5898");
+$key = pack('H*', "bcb04b7e103a0cd8b54763051cef08bc55abe029fdebae5e1d417e2ffb2a00a3");
 $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
 $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
 
