@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6eda9c9-8e2c-4418-9227-4c758967e2c2" name="Default" comment="" />
+    <list default="true" id="c6eda9c9-8e2c-4418-9227-4c758967e2c2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/get.php" afterPath="$PROJECT_DIR$/api/get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/put.php" afterPath="$PROJECT_DIR$/api/put.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Site.css" afterPath="$PROJECT_DIR$/css/Site.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/encrypt.js" afterPath="$PROJECT_DIR$/js/encrypt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ophalen.html" afterPath="$PROJECT_DIR$/ophalen.html" />
+    </list>
     <ignored path="SEC2---PHPEncrypter.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -22,21 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="encrypt.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/encrypt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="30">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#0#48#0" expanded="false" />
               </folding>
@@ -44,16 +40,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="put.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="put.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/put.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="27" selection-end-column="56" />
+            <state relative-caret-position="696">
+              <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <marker date="1465219490000" expanded="true" signature="1104:1145" placeholder="INSERT INTO data... " />
-                <marker date="1465219490000" expanded="true" signature="1104:1158" placeholder="INSERT INTO data... " />
-                <marker date="1465219490000" expanded="true" signature="1104:1159" placeholder="INSERT INTO data... " />
+                <marker date="1466095165000" expanded="true" signature="1331:1382" placeholder="INSERT INTO data... " />
+                <marker date="1466095165000" expanded="true" signature="1331:1399" placeholder="INSERT INTO data... " />
+                <marker date="1466095165000" expanded="true" signature="1331:1413" placeholder="INSERT INTO data... " />
               </folding>
             </state>
           </provider>
@@ -62,9 +58,13 @@
       <file leaf-file-name="get.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/get.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="696">
+              <caret line="57" column="115" selection-start-line="57" selection-start-column="115" selection-end-line="57" selection-end-column="115" />
+              <folding>
+                <element signature="e#6#93#0#PHP" expanded="true" />
+                <marker date="1466095710000" expanded="true" signature="1066:1103" placeholder="SELECT * FRO... data" />
+                <marker date="1466095710000" expanded="true" signature="1066:1128" placeholder="SELECT * FRO... data" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,18 +72,40 @@
       <file leaf-file-name="ophalen.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ophalen.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+            <state relative-caret-position="525">
+              <caret line="35" column="115" selection-start-line="35" selection-start-column="115" selection-end-line="35" selection-end-column="115" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Site.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="19" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="decrypt.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/decrypt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#48#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Site.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/Site.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state relative-caret-position="255">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -107,11 +129,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/ophalen.html" />
-        <option value="$PROJECT_DIR$/css/Site.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/encrypt.js" />
         <option value="$PROJECT_DIR$/api/put.php" />
+        <option value="$PROJECT_DIR$/js/decrypt.js" />
+        <option value="$PROJECT_DIR$/ophalen.html" />
+        <option value="$PROJECT_DIR$/api/get.php" />
+        <option value="$PROJECT_DIR$/css/Site.css" />
       </list>
     </option>
   </component>
@@ -249,12 +273,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1465214707858</updated>
-      <workItem from="1465214709560" duration="7044000" />
+      <workItem from="1465214709560" duration="9706000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7044000" />
+    <option name="totallyTimeSpent" value="9706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -295,58 +319,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/Site.css">
+    <entry file="file://$PROJECT_DIR$/api/put.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ophalen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/get.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="696">
+          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+            <marker date="1466095165000" expanded="true" signature="1331:1382" placeholder="INSERT INTO data... " />
+            <marker date="1466095165000" expanded="true" signature="1331:1399" placeholder="INSERT INTO data... " />
+            <marker date="1466095165000" expanded="true" signature="1331:1413" placeholder="INSERT INTO data... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/encrypt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state relative-caret-position="30">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/put.php">
+    <entry file="file://$PROJECT_DIR$/js/decrypt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="27" selection-end-column="56" />
+        <state relative-caret-position="165">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="57" column="115" selection-start-line="57" selection-start-column="115" selection-end-line="57" selection-end-column="115" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1465219490000" expanded="true" signature="1104:1145" placeholder="INSERT INTO data... " />
-            <marker date="1465219490000" expanded="true" signature="1104:1158" placeholder="INSERT INTO data... " />
-            <marker date="1465219490000" expanded="true" signature="1104:1159" placeholder="INSERT INTO data... " />
+            <marker date="1466095710000" expanded="true" signature="1066:1103" placeholder="SELECT * FRO... data" />
+            <marker date="1466095710000" expanded="true" signature="1066:1128" placeholder="SELECT * FRO... data" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="19" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ophalen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="115" selection-start-line="35" selection-start-column="115" selection-end-line="35" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/Site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

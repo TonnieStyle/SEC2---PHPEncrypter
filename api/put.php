@@ -8,31 +8,36 @@
 
 header('Content-Type: application/json');
 
-$result = array();
+$sqlresult = array();
 
 $username = $_POST['username'];
 $text = $_POST['text'];
 $password = $_POST['password'];
-$result['debug'] = $text;
+$sqlresult['debug'] = $text;
 
-$key = pack('H*', hash('sha256', $password));
+$key = pack('H*', "ED1025684BF30B12E92D5122D8A03CB32D2A2DFE55F3044C9D8DBC4FD51A5898");
+$iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
+$iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
 
 $encrypted = encrypt($key, $text);
 
-$result["dataSave"] = savedata($username, $encrypted);
-$result["dataSaved"] = $encrypted;
+$sqlresult["dataSave"] = savedata($username, $encrypted, $password);
+$sqlresult["dataSaved"] = $encrypted;
 
-echo json_encode($result);
+echo json_encode($sqlresult);
 
 function encrypt ($key, $payload) {
-    $iv = mcrypt_create_iv(IV_SIZE, MCRYPT_DEV_URANDOM);
-    $crypt = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $payload, MCRYPT_MODE_CBC, $iv);
-    $combo = $iv . $crypt;
-    $garble = base64_encode($iv . $crypt);
-    return $garble;
+    global $key;
+    global $iv;
+
+    $encryptedMessage = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $payload, MCRYPT_MODE_CBC, $iv);
+    $encryptedMessage  = $iv . $encryptedMessage;
+    $message_base64 = base64_encode($encryptedMessage);
+
+    return $message_base64;
 }
 
-function savedata($user, $data) {
+function savedata($user, $data, $password) {
     $servername = "localhost";
     $dbname = "sec2";
     $dbuser = "root";
@@ -46,22 +51,14 @@ function savedata($user, $data) {
         return("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "INSERT INTO data (name, message)
-VALUES ($user , $data)";
+    $sql = "INSERT INTO data (name, message, password)
+VALUES ('$user' , '$data', '$password')";
 
     if ($conn->query($sql) === TRUE) {
         $conn->close();
         return "New record created successfully";
     } else {
         $conn->close();
-        return "Error: " . $sql . "<br>" . $conn->error;
+        return "Error: " . $sql . $conn->error;
     }
-}
-
-function decrypt ($key, $garble) {
-    $combo = base64_decode($garble);
-    $iv = substr($combo, 0, IV_SIZE);
-    $crypt = substr($combo, IV_SIZE, strlen($combo));
-    $payload = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key, $crypt, MCRYPT_MODE_CBC, $iv);
-    return $payload;
 }
