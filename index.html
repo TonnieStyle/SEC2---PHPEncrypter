@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHPEncrypter</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/Site.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="/js/encrypt.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row inputRow">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">Encrypt</a></li>
+                <li role="presentation"><a href="/ophalen.html">Ophalen</a></li>
+            </ul>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Invoer
+                </div>
+                <div class="panel-body">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="naam">@</span>
+                        <input type="text" class="form-control" placeholder="Naam" aria-describedby="naam" id="username">
+                    </div>
+                    <div class="form-group" id="text-group">
+                        <label for="text">Text</label>
+                        <textarea class="form-control" rows="5" id="text"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="wachtwoord">@</span>
+                        <input type="text" class="form-control" placeholder="Wachtwoord" aria-describedby="wachtwoord" id="password">
+                    </div>
+                    <button class="btn btn-primary" id="encrypt-btn">Encrypt!</button>
+                </div>
+            </div>
+        </div>
+        <div class="row resultRow">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Resultaat
+                </div>
+                <div class="panel-body" id="result">
+                    Er is nog geen resultaat!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
